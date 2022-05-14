@@ -93,7 +93,7 @@
                 $Username = $_POST['email'];
                 $Password = $_POST['pass'];
 
-				if($Username == 'username' && $Password=='password' ){
+				if($Username == 'b181210555@sakarya.edu.tr' && $Password=='b181210555' ){
 					echo "valide ";
 				}else
                       echo "Invalide ";
