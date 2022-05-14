@@ -27,7 +27,7 @@
 			<div class="container-fluid">
 				<ul class="navbar-nav nav-tabs">
 					<li class="nav-item">
-						<a class="nav-link active" href="Login.html">
+						<a class="nav-link active" href="Login.php">
 							LogIn 
 						</a>
 					</li>
@@ -62,17 +62,17 @@
 	</div>
 	<section>
 		<div class="container-fluid">
-			<form action="/welcome.php" class="was-validated" method="post">
+			<form  class="was-validated" method="post">
 				<div class="form-group">
 					<label for="adi">E-mail:</label>
-					<input name="name" type="text" class="form-control" id="adi" required>
+					<input name="email" type="text" class="form-control" id="adi" required>
 				</div>
 				<div class="form-group">
 					<label for="soyad">Password:</label>
 					<input name="pass" type="text" class="form-control" id="soyad" required>
 				</div>
 				<div class="btn-group">
-					<button type="submit" class="btn btn-primary">Login</button>
+					<button type="submit" name="submit" class="btn btn-primary">Login</button>
 				</div>
 
 			</form>
@@ -83,3 +83,20 @@
 </body>
 
 </html>
+
+<?php 
+        /* Check Login form submitted */        
+        if(isset($_POST['submit'])){
+                /* Define username and associated password array */
+                
+                /* Check and assign submitted Username and Password to new variable */
+                $Username = $_POST['email'];
+                $Password = $_POST['pass'];
+
+				if($Username == 'username' && $Password=='password' ){
+					echo "valide ";
+				}else
+                      echo "Invalide ";
+				
+			}
+?>
