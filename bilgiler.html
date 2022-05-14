@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <h1>PAGE 2</h1>
+</head>
+
+<body>
+    <h2> Adi: <span id="result"></span> </h2>
+    <h2> Soyadiniz: <span id="result2"></span> </h2>
+    <h2> Email: <span id="result3"></span> </h2>
+    <h2> Cinsiyet: Erkek <span id="result4"></span> </h2>
+    <h2> Sehir: Alexandria <span id="result4"></span> </h2>
+    <h2> Mesajminiz: sdajbfa <span id="result5"></span> </h2>
+
+    <script>
+        document.getElementById("result").innerHTML = localStorage.getItem("nameValue");
+        document.getElementById("result2").innerHTML = localStorage.getItem("lastNameValue");
+        document.getElementById("result3").innerHTML = localStorage.getItem("emailValue");
+        document.getElementById("result4").innerHTML = localStorage.getItem("adiValue");
+        document.getElementById("result5").innerHTML = localStorage.getItem("adiValue");
+        document.getElementById("result6").innerHTML = localStorage.getItem("massgeValue");
+    </script>
+</body>
+
+</html>

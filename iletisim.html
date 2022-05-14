@@ -18,7 +18,17 @@
 	<script>
 		function passvalues() {
 			var firstName = document.getElementById("adi").value;
-			localStorage.setItem("adiValue", firstName);
+			localStorage.setItem("nameValue", firstName);
+
+			var lastName = document.getElementById("lastName").value;
+			localStorage.setItem("lastNameValue",lastName );
+
+			var email = document.getElementById("email").value;
+			localStorage.setItem("emailValue", email);
+
+			var massge = document.getElementById("massge").value;
+			localStorage.setItem("massgeValue", massge);
+
 			return false;
 		}
 	</script>
@@ -70,21 +80,21 @@
 
 	<section>
 		<div class="container-fluid">
-			<form action="bilgiler.php" class="was-validated">
+			<form action="bilgiler.html" class="was-validated">
 				<div class="form-group">
 					<label for="adi">Adınız:</label>
 					<input type="text" class="form-control" id="adi" required>
 				</div>
 				<div class="form-group">
 					<label for="soyad">Soyadınız:</label>
-					<input type="text" class="form-control" id="soyad" required>
+					<input type="text" class="form-control" id="lastName" required>
 				</div>
 				<div class="form-group">
 					<label for="email">Email:</label>
 					<input type="email" class="form-control" id="email" required>
 					<span id="validEmail"></span>
 				</div>
-				<div class="form-group">
+				<div class="form-group" >
 					<label for="cinsiyet">Cinsiyet:</label>
 					<div class="form-check-inline">
 						<label class="form-check-label">
@@ -107,7 +117,7 @@
 				</div>
 				<div class="form-group">
 					<label for="messege">Mesajmınız:</label>
-					<textarea class="form-control" rows="5" id="mesaj" required></textarea>
+					<textarea class="form-control" rows="5" id="massge" required></textarea>
 				</div>
 				<div class="btn-group">
 
