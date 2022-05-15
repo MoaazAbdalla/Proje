@@ -52,6 +52,11 @@
 						</a>
 					</li>
 					<li class="nav-item ">
+						<a class="nav-link " href="ilgiAlanlarım.html">
+							ilgi Alanlarım
+						</a>
+					</li>
+					<li class="nav-item ">
 						<a class="nav-link " href="iletisim.html">
 							İletişim
 						</a>
@@ -84,18 +89,19 @@
 
 </html>
 
-<!-- the php code that check email and password -->
-<?php 
+<?php
+// <!-- the php code that check email and password -->
         /* Check Login form submitted */        
-        if(isset($_POST['submit'])){
+            if(isset($_POST['submit'])){
                 /* Define username and associated password array */
                 
                 /* Check and assign submitted Username and Password to new variable */
                 $Username = $_POST['email'];
                 $Password = $_POST['pass'];
 
-				if($Username == 'b181210555@sakarya.edu.tr' && $Password=='b181210555' ){
+				if($Username == 'b181210555@sakarya.edu.tr' && $Password=='b181210555'){
 					header("location:welcome.html");
+					echo "valide ";
 					exit();					
 				}else{
                       echo "Invalide ";
