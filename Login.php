@@ -84,6 +84,7 @@
 
 </html>
 
+<!-- the php code that check email and password -->
 <?php 
         /* Check Login form submitted */        
         if(isset($_POST['submit'])){
@@ -94,9 +95,11 @@
                 $Password = $_POST['pass'];
 
 				if($Username == 'b181210555@sakarya.edu.tr' && $Password=='b181210555' ){
-					echo "valide ";
-				}else
+					header("location:welcome.html");
+					exit();					
+				}else{
                       echo "Invalide ";
+				}
 				
 			}
 ?>
