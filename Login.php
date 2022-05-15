@@ -65,7 +65,7 @@
 			<form  class="was-validated" method="post">
 				<div class="form-group">
 					<label for="adi">E-mail:</label>
-					<input name="email" type="text" class="form-control" id="adi" required>
+					<input type="email" name="email" type="text" class="form-control" id="adi" required>
 				</div>
 				<div class="form-group">
 					<label for="soyad">Password:</label>
